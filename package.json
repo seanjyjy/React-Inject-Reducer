@@ -1,6 +1,6 @@
 {
   "name": "react-inject-reducer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Inject Redux Reducer Asynchronously",
   "main": "lib/index.js",
   "files": [
