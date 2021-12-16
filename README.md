@@ -71,6 +71,14 @@ const InjectedComponent = withInjectReducer(Component);
 export default InjectedComponent;
 ```
 
+## Demo
+
+1) Notice that going between different routes, we can inject and eject the reducers dynamically
+2) The initialReducer which was created at the start will remain if it is not being ejected
+
+https://user-images.githubusercontent.com/65809727/146409302-155bfa7f-dab6-44ad-8856-dacfbc6ad928.mov
+
+
 ## Development
 
 ```bash
