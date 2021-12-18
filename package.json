@@ -27,7 +27,7 @@
     "url": "git+https://github.com/seanjyjy/React-Inject-Reducer.git"
   },
   "author": "Sean Lum",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/seanjyjy/React-Inject-Reducer/issues"
   },
