@@ -22,7 +22,21 @@ $ npm install react-inject-reducer
 
 ## Example Usage
 
-Using Context Method
+**Creating Store**
+
+`initializeStore` uses `createStore` from `redux`. It has the same argument syntax as `createStore`. <br/>
+**Note**: It is important use `initializeStore` rather than `createStore` if we want initial reducer which was used to create the store to remain in the store if `injectReducer` or `ejectReducer` is being used.
+
+```jsx
+import { initializeStore } from 'react-inject-reducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+import initialReducer from './initialReducer';
+
+const StoreDemo = initializeStore({ initialReducer }, composeWithDevTools());
+```
+
+**Using Context Method**
 
 ```jsx
 import { InjectReducerProvider, useInjectReducer } from 'react-inject-reducer';
@@ -50,7 +64,7 @@ const InjectedComponent = () => {
 export default InjectedComponent;
 ```
 
-Using HOC way
+**Using HOC way**
 
 ```jsx
 import { withInjectReducer } from 'react-inject-reducer';
@@ -73,11 +87,10 @@ export default InjectedComponent;
 
 ## Demo
 
-1) Notice that going between different routes, we can inject and eject the reducers dynamically
-2) The initialReducer which was created at the start will remain if it is not being ejected
+1. Notice that going between different routes, we can inject and eject the reducers dynamically
+2. The initialReducer which was created at the start will remain if it is not being ejected
 
 https://user-images.githubusercontent.com/65809727/146409302-155bfa7f-dab6-44ad-8856-dacfbc6ad928.mov
-
 
 ## Development
 
