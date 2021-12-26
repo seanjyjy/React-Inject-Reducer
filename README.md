@@ -1,6 +1,8 @@
-# React-Inject-Reducer
-
 <h1 align="center">React Inject Reducer</h1>
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/seanjyjy/fast-configs/blob/master/LICENSE)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![npm](https://img.shields.io/librariesio/release/npm/react-inject-reducer)
 
 Library to inject and eject reducers asynchronous to allow your redux store to grow / reduce dynamically.
 
